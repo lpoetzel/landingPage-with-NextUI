@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { Container, Navbar, Text, Button, Grid, Col } from '@nextui-org/react'
+import InfoCard from '@/components/InfoCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,6 +42,33 @@ export default function Home() {
         </Grid>
       </Grid.Container>
       {/* displaying product cards */}
+
+      <Grid.Container gap={2}>
+        <Grid xs={12} sm={4}>
+          <InfoCard
+            label='Course'
+            title="Learn Next.js"
+            imageUrl='https://littlevisuals.co/images/red_dawn.jpg'
+            studentCount='3500'
+          />
+        </Grid>
+        <Grid xs={12} sm={4}>
+          <InfoCard
+            label='Course'
+            title="Learn Typescript"
+            imageUrl='https://littlevisuals.co/images/sunset.jpg'
+            studentCount='1000'
+          />
+        </Grid>
+        <Grid xs={12} sm={4}>
+          <InfoCard
+            label='Course'
+            title="Learn Github workflow"
+            imageUrl='https://littlevisuals.co/images/tail.jpg'
+            studentCount='10'
+          />
+        </Grid>
+      </Grid.Container>
     </Container>
   )
 }
