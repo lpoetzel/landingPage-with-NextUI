@@ -14,12 +14,12 @@ export default function Home() {
       <Navbar isCompact variant={"static"} >
         <Navbar.Brand>
           <Text b color="inherit">
-            Learn to code
+            Learn Next-UI
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="md">
-          <Navbar.Link href="#"> Learning Platform</Navbar.Link>
-          <Navbar.Link href="#"> Community</Navbar.Link>
+          <Navbar.Link href="#"> About</Navbar.Link>
+          <Navbar.Link href="#"> Offers</Navbar.Link>
           <Navbar.Link href="#"> Contact us</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
@@ -35,8 +35,8 @@ export default function Home() {
       <Grid.Container justify='center' css={{ "height": "500px", "background-image": "url(https://littlevisuals.co/images/eponymous.jpg)" }} >
         <Grid xs={12} sm={5} alignItems="center">
           <Col css={{ "width": "100%" }}>
-            <Text weight={"bold"} size={70} css={{ "textAlign": "center" }}>The Education Platform</Text>
-            <Text weight={"bold"} size={70} css={{ "textAlign": "center" }}>Of The Future</Text>
+            <Text weight={"bold"} size={70} css={{ "textAlign": "center" }}>Very Fancy</Text>
+            <Text weight={"bold"} size={70} css={{ "textAlign": "center" }}>Placeholder text</Text>
             <Button size="md" shadow color="gradient" css={{ "width": "100%", "marginTop": "10px" }}>Join For Free</Button>
           </Col>
         </Grid>
@@ -47,7 +47,7 @@ export default function Home() {
         <Grid xs={12} sm={4}>
           <InfoCard
             label='Course'
-            title="Learn Next.js"
+            title="Learn Next-UI"
             imageUrl='https://littlevisuals.co/images/red_dawn.jpg'
             studentCount='3500'
           />
